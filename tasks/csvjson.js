@@ -32,8 +32,9 @@ module.exports = function(grunt) {
 		function processFile(dest, src) {
 			start();
 			csvjson.process(grunt.file.read(src), options, function (err, sets) {
-				sets.forEach(function (set) {
-					var name = (set.name || path.basename(src, '.csv'));
+				sets.forEach(function (set) {					
+					var name = path.basename(src,'.csv');
+					
 					var fileName = path.join(dest, name + '.json');
 					var data = JSON.stringify(set.data);
 
