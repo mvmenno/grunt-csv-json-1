@@ -5,7 +5,7 @@
   "main": "Gruntfile.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jpweeks/grunt-csv-json.git"
+    "url": "https://github.com/mvmenno/grunt-csv-json-1.git"
   },
   "author": {
     "name": "Jay Weeks",
